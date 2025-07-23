@@ -21,7 +21,7 @@ html, body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  z-index: 1000; /* make sure it's above other elements */
+  z-index: 1000; 
 }
 
 
@@ -180,6 +180,209 @@ html, body {
   font-size: 1em;
   font-weight: 500;
   text-decoration: none;
+}
+/*flag section*/
+
+.top-heading {
+  text-align: left;
+  padding: 20px 40px;
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+.top-heading h5 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-left: 150px;
+  color: #0dcaf0;
+}
+.top-heading h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  margin-left: 150px;
+}
+
+.top-heading {
+  text-align: left;
+  margin-left: 2rem; 
+}
+
+.top-heading h5 {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.top-heading h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+
+.top-heading {
+  text-align: left;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.top-heading h5 {
+  font-size: 1.25rem;
+  color:#0dcaf0;
+  margin-bottom: 0.5rem;
+}
+
+.top-heading h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Background section */
+.flag {
+  background: url('map.jpg') no-repeat center center;
+  background-size: cover;        
+  padding: 40px 0;
+  margin: 0 10rem;                
+  border-radius: 8px;
+  overflow: hidden;              
+}
+
+
+.left-column, .bottom-text, .flag-list {
+  background: transparent !important;
+}
+
+
+.container1 {
+  display: flex;
+  align-items: flex-start;
+}
+
+
+.flag-list {
+  height: 300px;        
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-inner {
+  display: flex;
+  flex-direction: column;
+  animation: scroll-up 15s linear infinite;
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.flag-item {
+  margin-bottom: 10px;
+}
+
+.flag-item img {
+  width: 40px;
+  height: auto;
+}
+
+
+.bottom-text {
+  margin-top: 40px;  
+  color: white;
+}
+
+.bottom-text h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.bottom-text p, .bottom-text a {
+  color: white;
+  font-size: 1rem;
+}
+
+.custom-gap {
+  gap: 10px; 
+}
+
+.center-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.buy-btn {
+  margin-top: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+/* Center card */
+.center-card {
+  background: rgba(255,255,255,0.9);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+}
+.center-card img {
+  width: 100%;
+}
+.buy-btn {
+  background-color: #1a3c3c;
+  color: white;
+  padding: 10px 0;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Floating price label */
+.price-label {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  background: white;
+  color: black;
+  border-radius: 20px;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+
+/* Shipping list */
+.shipping-list {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+  width: 180px;
+  font-size: 12px;
+}
+.shipping-item {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+.shipping-item:last-child {
+  border-bottom: none;
+}
+
+/* Bottom text */
+.flag h3{
+  color:#ccc;
+}
+.flag p{
+  color:#ccc;
 }
 
 /* Responsive navbar & hero */
@@ -415,7 +618,7 @@ a:hover {
   box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 .shopify-section {
-  background-color: #022121; /* match your site dark theme */
+  background-color: #022121; 
   color: #fff;
 }
 
@@ -433,7 +636,7 @@ a:hover {
   font-size: 3rem;
   font-weight: bold;
   margin-top: 0.5rem;
-  color: #0dcaf0; /* accent color */
+  color: #0dcaf0; 
 }
 
 .small-unit {
@@ -548,7 +751,7 @@ a:hover {
 }
 
 .scrolling-icons {
-  height: 120px; /* adjust to your image's height */
+  height: 120px; 
   background-image: url('https://cdn.shopify.com/b/shopify-brochure2-assets/9f16a26d1372dad978e9c7bfbea6b620.png?originalWidth=1950&originalHeight=30'); 
   background-repeat: repeat-x;
   background-position: 0 0;
