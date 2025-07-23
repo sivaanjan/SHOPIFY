@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopify Clone: The All-in-One Commerce Platform</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Website logo -->
+  <link rel="icon" href="https://img.freepik.com/free-vector/flat-design-farmers-market-logo_23-2149332945.jpg?semt=ais_hybrid&w=740">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bbe23f73fa.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+        crossorigin="anonymous">
+
+  <style>
+    /* Mega menu styles */
+    .mega-menu {
+      padding: 1.5rem;
+      border: none;
+    }
+    .mega-menu h6 {
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+    .mega-menu .list-unstyled a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      display: block;
+      padding: 0.25rem 0;
+    }
+    .mega-menu .list-unstyled a:hover {
+      color: #fff;
+    }
+    .mega-menu-lg {
+      width: 650px;
+    }
+    .mega-menu-sm {
+      width: 220px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img
+          src="https://cdn.shopify.com/b/shopify-brochure2-assets/177d09fab2ac0c32b7e0fe9f4ab1a9dd.svg"
+          alt="Shopify Logo" width="100%"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- Solutions Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Solutions</a>
+            <ul class="dropdown-menu bg-dark mega-menu mega-menu-lg" aria-labelledby="solutionsDropdown">
+              <li>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <ul class="list-unstyled">
+                      <li><h6>Start</h6></li>
+                      <li><a href="#">Start your business</a></li>
+                      <li><a href="#">Create your website</a></li>
+                      <li><a href="#">Customize your store</a></li>
+                      <li><a href="#">Business apps</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-3">
+                    <ul class="list-unstyled">
+                      <li><h6>Sell</h6></li>
+                      <li><a href="#">Sell online</a></li>
+                      <li><a href="#">POS</a></li>
+                      <li><a href="#">Wholesale</a></li>
+                      <li><a href="#">International sales</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-3">
+                    <ul class="list-unstyled">
+                      <li><h6>Market</h6></li>
+                      <li><a href="#">Marketing tools</a></li>
+                      <li><a href="#">Social media</a></li>
+                      <li><a href="#">Know your audience</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-3">
+                    <ul class="list-unstyled">
+                      <li><h6>Manage</h6></li>
+                      <li><a href="#">Orders & stock</a></li>
+                      <li><a href="#">Analytics</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+
+          <!-- Resources Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Resources</a>
+            <ul class="dropdown-menu bg-dark mega-menu mega-menu-sm" aria-labelledby="resourcesDropdown">
+              <li>
+                <ul class="list-unstyled">
+                  <li><h6>Help & support</h6></li>
+                  <li><a href="#">Help center</a></li>
+                  <li><a href="#">Guides</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </li>
+              <hr class="dropdown-divider bg-light">
+              <li>
+                <ul class="list-unstyled">
+                  <li><h6>Popular topics</h6></li>
+                  <li><a href="#">What is Shopify?</a></li>
+                  <li><a href="#">Founder stories</a></li>
+                  <li><a href="#">Branding tips</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+
+          <!-- What's new Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="whatsNewDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">What’s new</a>
+            <ul class="dropdown-menu bg-dark mega-menu mega-menu-sm" aria-labelledby="whatsNewDropdown">
+              <li>
+                <ul class="list-unstyled">
+                  <li><h6>What's New</h6></li>
+                  <li><a href="#">Changelog</a></li>
+                  <li><a href="#">Newsroom</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="buttons">
+          <a href="#" class="login">Log in</a>
+          <a href="#" class="btn">Start for free</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="zvymsxmg---httpswwwyoutubecomwatchvvu.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h1><strong>Be the next<br>global empire</strong></h1>
+      <p>Dream big, build fast, and grow far on Shopify.</p>
+      <a href="#" class="btn large">Start for free</a>
+    </div>
+  </section>
+  <!--enterpuner-->
+  <section class="shopify-section1 text-white">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <h5 class="display-6 fw-semibold text-start">
+          For everyone from entrepreneurs to<br> enterprise
+        </h5>
+      </div>
+      <div class="col-md-5">
+        <p class="lead text-end">
+          Millions of merchants of every size
+          have collectively made over
+          $1,000,000,000,000 in sales on Shopify.
+        </p>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+      <div class="col">
+        <div class="card h-100 bg-dark text-white border-0">
+          <div class="image-wrapper">
+            <img src="card1.png" class="card-img-top default-img" alt="Summer Solace Tallow">
+            <img src="hover-card1.png" class="card-img-top hover-img" alt="Summer Solace Tallow Hover">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Get started fast</h5>
+            <p class="card-text">
+              Solo seller Megan Bre Camp started <strong>Summer Solace Tallow</strong> to sell her organic candles and skincare online and at local farmers markets.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 bg-dark text-white border-0">
+          <div class="image-wrapper">
+            <img src="card2.png" class="card-img-top default-img" alt="Gymshark">
+            <img src="hover-card2.png" class="card-img-top hover-img" alt="Gymshark Hover">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Grow as big as you want</h5>
+            <p class="card-text">
+              Athleisure brand <strong>Gymshark</strong> grew from working out of a garage to the global juggernaut it is today, with $500M+ sales annually.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 bg-dark text-white border-0">
+          <div class="image-wrapper">
+            <img src="card3.png" class="card-img-top default-img" alt="Mattel">
+            <img src="hover-card3.png" class="card-img-top hover-img" alt="Mattel Hover">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Raise the bar</h5>
+            <p class="card-text">
+              With the help of Shopify for enterprise, <strong>Mattel</strong> sells their iconic toys direct to customers around the world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <button class="btn btn-outline-light rounded-pill px-4 py-2">
+        Pick a plan that fits
+      </button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Custom card section -->
+  <div class="custom-card">
+    <div class="custom-card-body part4">
+      <div class="col-md-7">
+      <h6>Online and in person</h6>
+    </div>
+      <div class="part41">
+        <h1>Sell here, there, and everywhere</h1>
+              <div class="col-md-5">
+        <p><a href="#">Get a stunning store</a> that's made to sell. Design fast with AI, choose a stylish theme, or build completely custom for full control.</p></div>
+      </div>
+    </div>
+    <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/2f453878745c0b0eda5463111c3af909.png" 
+         class="custom-card-img-bottom" alt="Shopify image">
+  </div>
+
+  <!-- Feature cards -->
+  <div class="card-container">
+    <div class="feature-card1">
+      <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/25aef5a05b255ad0426e443bf88c3b1a.png" alt="POS">
+      <h4>In-person point of sale</h4>
+      <p>Sell face to face and keep sales in sync with <a href="#">Shopify POS</a>.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/22eb5c8bee58e7740201008cf9949639.png" alt="Channels">
+      <h4>Publish across channels</h4>
+      <p>Show up where shoppers scroll with <a href="#">multichannel integration</a>.</p>
+    </div>
+    <div class="feature-card">
+      <img src="download.png" alt="Checkout">
+      <h4>World's best checkout</h4>
+      <p><a href="#">Shopify Checkout</a> is fast, customizable, and optimized.</p>
+    </div>
+  </div>
+
+  <!-- Manage section -->
+  <section class="sec5">
+    <div class="container text-start">
+      <h6 class="section-subtitle"></h6>
+      <h1 class="section-title">Take care of business</h1>
+      <div class="row justify-content-center">
+        <div class="col-md-5 mb-4">
+          <div class="card custom-card">
+            <img src="download (1).png" class="card-img-top" alt="Desktop">
+            <div class="card-body">
+              <p class="card-text">From back office to front of store, you’re always in control with Shopify Admin.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 mb-4">
+          <div class="card custom-card">
+            <img src="download (2).png" class="card-img-top" alt="Mobile">
+            <div class="card-body">
+              <p class="card-text">From back office to front of store, you’re always in control with Shopify Admin.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--spotlight-->
+  <section class="scrolling-section py-5">
+  <div class="container">
+    <h1 class="text-white mb-3">Apps for anything else</h1>
+    <p class="text-white fs-5">
+      Shopify offers all the essentials out of the box, but if your business calls<br>
+      for something extra you have the <a href="#">Shopify App Store</a>—with 13,000+ <br>
+      commerce apps for whatever specialized features you might need.
+    </p>
+  </div>
+  <div class="scrolling-icons mt-4"></div>
+</section>
+
+  <!--sec6-->
+  <section class="blue">
+  <div class="custom-card">
+  <div class="custom-card-body1">
+    <h1 class="card-title">By developers, for developers</h1><br>
+    <p class="card-text"><a href="">APIs, primitives, and tools</a> empower devs and partners to build the apps,<br> themes, and custom storefronts businesses are looking for.</p>
+  </div>
+  <nbsp></nbsp>
+  <img src="download3.png" class="card-img-bottom" alt="image"></div>
+  </section>
+
+  <!--globe section-->
+  <section class="shopify-section py-5">
+  <div class="container">
+
+    <!-- Top centered title -->
+    <div class="row mb-4">
+      <div class="col text-center">
+        <h1 class="top-center-title fw-bold">There’s no better place for you to build</h1>
+      </div>
+    </div>
+
+    <!-- Left title and stats side by side; right column empty or later use -->
+    <div class="row align-items-start mb-5">
+      <div class="col-md-6 text-md-start text-center mb-4 mb-md-0">
+        <h2 class="left-title mb-3">The world's best-<br>converting checkout</h2>
+
+        <!-- Stats side by side -->
+        <!-- Stats side by side -->
+         <br>
+         <div class="d-flex justify-content-center justify-content-md-start gap-5 text-center">
+          <div class="stat-item">
+              <h5 class="mb-1">Higher conversions</h5>
+               <div class="big-number">15<sup>%</sup></div>
+               </div>
+               <div class="stat-item">
+                <h5 class="mb-1">High-intent shoppers</h5>
+                <div class="big-number">150M<sup>+</sup></div>
+              </div>
+            </div>
+      <div class="col-md-6 text-center">
+        <!-- optional empty column -->
+      </div>
+    </div>
+
+    <!-- Paragraph + image row -->
+    <div class="row align-items-center">
+      <div class="col-md-6 text-md-start text-center mb-4 mb-md-0">
+        <p class="description">
+          <span class="underline">Shopify Checkout</span> converts 15% higher on average than other<br> commerce platforms and exposes your brand to 150 million buy-<br>ready shoppers.
+        </p>
+        <br>
+        <p>
+          Based on external study with a Big Three global consulting firm in April, 2023.
+
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/bead93385459f74c899c10d6f44cbd33.png?originalWidth=1920&originalHeight=1732&width=1000" alt="Shopify" class="img-fluid custom-img">
+      </div>
+    </div>
+
+  </div>
+  <div class="row align-items-center mt-4">
+      <div class="col-md-6 text-center mb-4 mb-md-0">
+        <video controls autoplay muted loop width="100%" class="custom-video">
+          <source src="whatsapp.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="col-md-6 text-md-start text-center">
+        <h3 class="video-heading fw-bold">Rock steady and blazing fast</h3>
+        <p class="video-description">
+          Shopify puts your store within 50 milliseconds of every <br>shopper on the planet, with the capacity to handle even<br> the most epic product drops.
+        </p>
+      </div>
+    </div>
+    <br>
+
+    <!--globe bottom-->
+    <div class="container my-5">
+  <div class="row g-4">
+
+    <!-- Left column (7 columns) -->
+    <div class="col-md-7">
+      
+      <!-- Text above carousel -->
+      <div class="underglobe mb-3">
+        <h3>Shopify never stops innovating</h3>
+        <p>
+          Our fleet of 4000+ world-class developers never stops leveraging the latest tech to<br>
+          make your business stronger, faster, and more successful.
+        </p>
+      </div>
+
+      <!-- Carousel card -->
+      <div class="carousel-card mb-3">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/e7a7e587ed3178be5146dc8c4e6d2c5f.png?originalWidth=2160&originalHeight=1684&width=600" class="d-block w-100 carousel-img" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/83fa084f880a4d188f37acb060e7b6a5.png?originalWidth=2160&originalHeight=1684&width=600" class="d-block w-100 carousel-img" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/d4d93fa99b6ddfd16adff974ea335888.png?originalWidth=2160&originalHeight=1684&width=600" class="d-block w-100 carousel-img" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/8beb6ea8db7cbdc2c2da006f68d44195.png?originalWidth=2160&originalHeight=1684&width=600" class="d-block w-100 carousel-img" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Text below carousel -->
+      <div class="below-carousel">
+        <h4>AI designed for commerce </h4>
+        <p>
+          <a href="#">Shopify Magic</a> taps the power of AI to save you time, whether it’s generating product content or suggesting ways to get the most out of Shopify.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Right column (5 columns): single card -->
+    <div class="card-group col-md-5">
+      <div class="green-card">
+  <img src="horizon.png" class="card-img-top" alt="horizon">
+  <div class="card-body">
+    <h5 class="card-title">Nonstop innovation</h5>
+    <p class="card-text">
+      Every 6 months, Shopify ships 150+ new features and upgrades—all showcased in <a href="">Shopify Editions.</a>
+    </p>
+  </div>
+</div>
+
+  </div>
+</div>
+</section>
+
+
+  <!-- Sell section -->
+  <section class="sell-section">
+    <h2 class="section-title">It's easy to start selling</h2>
+    <div class="content">
+      <div class="right">
+        <div class="card card-left">
+          <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/890dbeb471a10637528a72179b12bfa9.jpg" alt="Card 1">
+        </div>
+        <div class="card card-right">
+          <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/ce0048c94b712ae773a1f6371ced6303.jpg" alt="Card 2">
+        </div>
+      </div>
+      <div class="left">
+        <ol class="steps">
+          <li><span>Add your first product</span></li>
+          <hr class="bg-light">
+          <li><span>Customize your store</span></li>
+          <hr class="bg-light">
+          <li><span>Set up payments</span></li>
+        </ol>
+        <button class="action-btn">Take a shot</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-black text-white pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 mb-4">
+        <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/177d09fab2ac0c32b7e0fe9f4ab1a9dd.svg" alt="Shopify Logo" height="32">
+      </div>
+      <div class="col-md-2 mb-4">
+        <h6 class="fw-bold">Shopify</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Affiliates</a></li>
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">Service status</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 mb-4">
+        <h6 class="fw-bold">Support</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Merchant Support</a></li>
+          <li><a href="#">Shopify Help Center</a></li>
+          <li><a href="#">Hire a Partner</a></li>
+          <li><a href="#">Shopify Academy</a></li>
+          <li><a href="#">Shopify Community</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 mb-4">
+        <h6 class="fw-bold">Developers</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Shopify.dev</a></li>
+          <li><a href="#">API Documentation</a></li>
+          <li><a href="#">Dev Degree</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 mb-4">
+        <h6 class="fw-bold">Products</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Shopify Plus</a></li>
+          <li><a href="#">Shopify for Enterprise</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 mb-4">
+        <h6 class="fw-bold">Global Impact</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Build Black</a></li>
+        </ul>
+        <h6 class="fw-bold mt-3">Solutions</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Online Store Builder</a></li>
+          <li><a href="#">Website Builder</a></li>
+          <li><a href="#">Ecommerce Website</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="border-secondary">
+
+    <div class="row align-items-center pb-3">
+      <div class="col-md-6 small mb-2 mb-md-0">
+        🌐 India | English
+        &nbsp; | &nbsp;
+        <a href="#">Terms of service</a> |
+        <a href="#">Privacy policy</a> |
+        <a href="#">Sitemap</a> |
+        <a href="#">Privacy Choices</a>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-tiktok"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-pinterest-p"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+     crossorigin="anonymous"></script>
+</body>
+</html>
