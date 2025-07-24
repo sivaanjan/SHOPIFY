@@ -23,8 +23,6 @@ html, body {
   padding: 20px 40px;
   z-index: 1000; 
 }
-
-
 .navbar-brand {
   width: 8%;
   margin-left: 5%;
@@ -69,33 +67,25 @@ html, body {
   font-weight: 500;
   text-decoration: none;
 }
-
-
 .shopify-section1 {
   background-color:black;
   padding: 60px 20px;
 }
-
-
 .shopify-section1 .card img {
   object-fit: cover;
   height: auto;
 }
-
 .shopify-section1 .card-title {
   font-size: 1.25rem;
   margin-top: 0.75rem;
 }
-
 .shopify-section1 .card-text {
   font-size: 0.95rem;
   margin-top: 0.5rem;
 }
-
 .shopify-section1 button {
   border-width: 2px;
 }
-
 @media (max-width: 767px) {
   .shopify-section1 .text-start, .shopify-section1 .text-end {
     text-align: center !important;
@@ -104,7 +94,6 @@ html, body {
 .image-wrapper {
   position: relative;
 }
-
 .image-wrapper img.hover-img {
   position: absolute;
   top: 0;
@@ -115,7 +104,6 @@ html, body {
   opacity: 0;
   transition: opacity 0.4s ease;
 }
-
 .image-wrapper:hover img.hover-img {
   opacity: 1;
 }
@@ -125,8 +113,6 @@ html, body {
   display: block;
   object-fit: cover;
 }
-
-
 /* Hero section */
 .hero {
   position: relative;
@@ -585,52 +571,6 @@ body {
   }
 }
 
-/* Custom card */
-.custom-card {
-  border-radius: 8px;
-  overflow: hidden;
-  max-width: 1250px;
-  background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  margin: 20px auto;
-}
-.custom-card-body {
-  background-color: #000;
-  color: #fff;
-  padding: 24px;
-}
-.part4 h6 {
-  color: #0dcaf0;
-  margin-bottom: 10px;
-  font-weight: 500;
-}
-.part41 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-.part41 h1 {
-  font-size: 2em;
-  font-weight: 600;
-  margin: 0;
-}
-.part41 p {
-  margin: 0;
-  color: white;
-  font-size: 1em;
-}
-.part41 p a {
-  color: white;
-  text-decoration: underline;
-  font-weight: 500;
-}
-.custom-card-img-bottom {
-  width: 100%;
-  height: auto;
-  border-top: 1px solid black;
-}
 @media (max-width: 768px) {
   .part41 { flex-direction: column; }
   .part41 h1 { font-size: 1.5em; }
@@ -690,6 +630,88 @@ a:hover {
 .green-card p a{
   color:#fff;
 }
+
+/*online and person*/
+/* Entire section black */
+.person {
+  background-color: #000 !important;
+  padding: 0 5%;
+}
+
+/* Remove default container bg/padding */
+.container {
+  background-color: #000 !important;
+  padding: 0 !important;
+  margin: 0 auto;
+}
+
+/* Card stays black, remove borders & shadows */
+.custom-card {
+  background-color: #000 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Left & right columns force black bg */
+.custom-card .col-md-7,
+.custom-card .col-md-5 {
+  background-color: #000 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Card body bg black */
+.custom-card .card-body {
+  background-color: #000 !important;
+  padding: 0 !important;
+}
+
+/* Titles */
+.custom-card .card-title {
+  color: #007bff;
+  margin-bottom: 8px;
+}
+
+.custom-card h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+/* p tag on right: show up to ~3 lines, black bg */
+.custom-text {
+  background-color: #000 !important;
+  color:rgba(245, 245, 245, 0.368);;
+  font-size: 1rem;
+  padding: 4px 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;         /* allow up to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Link inside p */
+.custom-text a {
+  color:rgba(245, 245, 245, 0.368);
+  text-decoration: none;
+}
+
+.custom-text a:hover {
+  text-decoration: underline;
+}
+
+/* Image below, fill width, black bg behind */
+.custom-card-img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  margin-top: 0 !important;
+  background-color: #000 !important;
+  display: block;
+  border: none !important;
+}
+
 
 /* Feature cards */
 .card-container {
@@ -870,7 +892,6 @@ a:hover {
 .left {
    max-width: 220px; text-align: left; 
   }
-
 .steps {
   list-style: none;
   counter-reset: step-counter;
@@ -881,7 +902,6 @@ a:hover {
   margin: 15px 5px 15px 15px;
   color: #fff;
 }
-
 .steps li {
   position: relative;
   font-size: 22px;
@@ -915,7 +935,6 @@ a:hover {
 @media (max-width: 768px) {
   .sell-section .card { width: 200px; }
 }
-
 /*blue*/
 .blue{
   background-color: rgb(2, 2, 60);
@@ -927,16 +946,13 @@ a:hover {
 .custom-card-body1 a{
   color: rgba(245, 245, 245, 0.819);
 }
-
 .scrolling-section {
   background-color:rgb(2, 2, 60);
   overflow: hidden;
 }
-
 .text-white a{
   color: white;
 }
-
 .scrolling-icons {
   height: 120px; 
   background-image: url('https://cdn.shopify.com/b/shopify-brochure2-assets/9f16a26d1372dad978e9c7bfbea6b620.png?originalWidth=1950&originalHeight=30'); 
@@ -950,7 +966,6 @@ a:hover {
   cursor: pointer;
  
 }
-
 @keyframes scrollRight {
   from {
     background-position: 0 0;
@@ -959,7 +974,6 @@ a:hover {
     background-position: 100% 0;
   }
 }
-
 /* Footer */
 .footer a {
   color: #ffffffcc;
