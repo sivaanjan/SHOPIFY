@@ -24,6 +24,9 @@ html, body {
   z-index: 1000; 
 }
 
+.fa-bars{
+  color:white;
+}
 
 .navbar-brand {
   width: 8%;
@@ -915,6 +918,61 @@ a:hover {
 @media (max-width: 768px) {
   .sell-section .card { width: 200px; }
 }
+
+/*online and person*/
+.sec7 {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;  
+  align-items: flex-start;        
+  padding: 40px 60px;              
+  flex-wrap: wrap;                
+  font-family: sans-serif;
+}
+
+.top-text {
+  display: flex;
+  flex-direction: column;   
+  flex: 1;
+  min-width: 300px;
+}
+
+.online-text {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.top-text h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.top-text p{
+  color:#0dcaf0;
+}
+.desc-text {
+  flex: 1;
+  color: white;
+  max-width: 475px;         
+  text-align: right;
+  margin-left: auto;        
+  line-height: 1.5;
+  word-wrap: break-word;
+  min-width: 250px;
+}
+
+.desc-text a {
+  color: white;
+  text-decoration: underline;
+}
+
+.hero-full img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
 
 /*blue*/
 .blue{
